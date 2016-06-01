@@ -21,6 +21,18 @@ if (mysqli_connect_errno())
 $value1 = $_POST['input1'];
 $value2 = $_POST['input2'];
 
+$sql = "CREATE TABLE $table (
+id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY, 
+love VARCHAR(30) NOT NULL,
+input1 TEXT(2000) NOT NULL,
+date TIMESTAMP
+)";
+
+if ($conn->query($sql) === TRUE) {
+    echo "Table newfeed created successfully";
+} else {
+    echo "Error creating 'demo': " . $conn->error;
+}
 $sql = "INSERT INTO demo (input1,love) VALUES ('$value1','$value2')";
 
 // for mysqli error, we add conn between the brackets
