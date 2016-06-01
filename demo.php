@@ -21,7 +21,7 @@ if (mysqli_connect_errno())
 $value1 = $_POST['input1'];
 $value2 = $_POST['input2'];
 
-$sql = "CREATE demo $table (
+$sql = "CREATE table demo  (
 id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY, 
 love VARCHAR(30) NOT NULL,
 input1 TEXT(2000) NOT NULL,
