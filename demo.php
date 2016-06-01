@@ -1,11 +1,17 @@
 <?php
 //this is an old fashion of defining strings, dont use it anymore (mysql)
-define('DB_NAME', 'form1 exercice');
-define('DB_USER', 'root');
-define('DB_PASSWORD', '1234');
-define('DB_HOST', 'localhost');
+
+$url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+
+$server = $url["host"];
+$username = $url["user"];
+$password = $url["pass"];
+$db = substr($url["path"], 1);
+
+$conn = new mysqli($server, $username, $password, $db);
+
 // Create connection we use $conn instead of $link
-$conn = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
+
 // Check connection
 if (mysqli_connect_errno())
   {
