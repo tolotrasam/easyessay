@@ -1,5 +1,5 @@
 <?php echo 'it works!' ;
-<<<<<<< HEAD
+
 echo '<a href = "about.php">about</a>' ;
 echo '<a href = "contact.html">contact</a>' ;
 echo '<a href = "mainvisual.html">visual board</a>' ;
