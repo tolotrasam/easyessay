@@ -35,10 +35,17 @@ if ($conn->query($sql) === TRUE) {
 }
 $sql = "INSERT INTO demo (input1,love) VALUES ('$value1','$value2')";
 
-// for mysqli error, we add conn between the brackets
-
+$value3 = $_post['uploadfile'];
+$target_Folder = "boardpicture/";
+$file_name = $_FILES['uploadfile']['name'];
+$file_type = $_FILES['uploadfile']['type'];
+//inserting data
 if (mysqli_query($conn, $sql)) {
-    echo "New record created successfully";
+	//if the picture is uploaded sucessfully,it will be moved inside the container folder
+	$target_Path = $target_Folder.basename( $_FILES['uploadfile']['name'] );
+$savepath = $target_Path.basename( $_FILES['uploadfile']['name'] );
+        move_uploaded_file( $_FILES['uploadfile']['tmp_name'], "$target_Path" );
+    //header ('location: mainvisual.html'); 
 } else {
     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 }
