@@ -15,19 +15,19 @@ if ($conn->query($sql) === TRUE) {
     echo "Error creating '$database': " . $conn->error;
 }
 ======= */
-$servername = "localhost";
-$username = "root";
-$password = "1234";
-$database = "database2";
-$conn = new mysqli($servername, $username, $password);
+//$servername = "localhost";
+//$username = "root";
+//$password = "1234";
+//$database = "database2";
+//$conn = new mysqli($servername, $username, $password);
 //Create a Database
-$sql = "CREATE DATABASE $database ";
-if ($conn->query($sql) === TRUE) {
+//$sql = "CREATE DATABASE $database ";
+//if ($conn->query($sql) === TRUE) {
    //echo "Database created successfully";
-} else {
+//} else {
    // echo "Error creating '$database': " . $conn->error;
-}
-mysqli_close($conn);
+//}
+//mysqli_close($conn);
 // >>>>>>> origin/master
 // closing connection, cause we need to connect to the new database
 //new connection to the database
@@ -37,12 +37,12 @@ mysqli_close($conn);
 // $password = "M3SFZ429pu";
 // $database = "sql3119062";
 // <<<<<<< HEAD
-// $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
-// $server = $url["host"];
-// $username = $url["user"];
-// $password = $url["pass"];
-// $db = substr($url["path"], 1);
-// $conn = new mysqli($server, $username, $password, $db);
+ $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+ $server = $url["host"];
+ $username = $url["user"];
+ $password = $url["pass"];
+ $db = substr($url["path"], 1);
+ $conn = new mysqli($server, $username, $password, $db);
 // =======
 // $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
 // $server = $url["host"];
@@ -53,7 +53,7 @@ mysqli_close($conn);
 // >>>>>>> origin/master
 
 // Create connection we use $conn instead of $link
-$conn = new mysqli($servername, $username, $password, $database);
+//$conn = new mysqli($servername, $username, $password, $database);
 // Check connection
 if (mysqli_connect_errno())
   {
