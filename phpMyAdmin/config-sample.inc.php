@@ -32,7 +32,7 @@ $password = $url["pass"];
 $db = substr($url["path"], 1);
 
 /* Authentication type */
-$cfg['Servers'][$i]['auth_type'] = 'config';
+$cfg['Servers'][$i]['auth_type'] = 'cookie';
 $cfg['Servers'][$i]['username'] = $username;
 $cfg['Servers'][$i]['password'] = $password;
 
