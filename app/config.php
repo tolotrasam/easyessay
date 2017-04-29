@@ -14,23 +14,23 @@ if ($conn->query($sql) === TRUE) {
 } else {
     echo "Error creating '$database': " . $conn->error;
 }
-======= */
-$servername = "localhost";
-$username = "root";
-$password = "";
-$database = "eassy_essay";
-$conn = new mysqli($servername, $username, $password);
-//Create a Database
-$sql = "CREATE DATABASE $database ";
-
-
-
-if ($conn->query($sql) === TRUE) {
-   //echo "Database created successfully";
-} else {
-   // echo "Error creating '$database': " . $conn->error;
-}
-mysqli_close($conn);
+//======= */
+//$servername = "localhost";
+//$username = "root";
+//$password = "";
+//$database = "eassy_essay";
+//$conn = new mysqli($servername, $username, $password);
+////Create a Database
+//$sql = "CREATE DATABASE $database ";
+//
+//
+//
+//if ($conn->query($sql) === TRUE) {
+//   //echo "Database created successfully";
+//} else {
+//   // echo "Error creating '$database': " . $conn->error;
+//}
+//mysqli_close($conn);
 
 
 
