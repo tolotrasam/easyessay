@@ -1,6 +1,6 @@
 <?php
 //session_start();
-require '../session.php';
+require(__DIR__.'/../session.php');
 
 
 if ( isset( $_GET["essay_id"] ) ) {
