@@ -115,13 +115,13 @@
 
 	    $result = $conn->query( $sql );
 	    echo '<ul>';
-	    echo '<li><a href = "essay.php">New Essay</a></li>';
+	    echo '<li><a href = "essay.html">New Essay</a></li>';
 	    echo'<br>';
 	    while ( $row = mysqli_fetch_array( $result ) ) {
 
 		    $id    = $row['essay_id'];
 		    $title = $row['essay_title'];
-		    echo '<li><a href = "essay.php?essay_id=' . $id . '">' . $title . '</a></li>';
+		    echo '<li><a href = "essay.html?essay_id=' . $id . '">' . $title . '</a></li>';
 
 	    }
 
