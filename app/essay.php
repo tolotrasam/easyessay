@@ -1,4 +1,6 @@
 <?php
+//session_start();
+require '../session.php';
 if ( isset( $_GET["essay_id"] ) ) {
 	$essay_id = $_GET["essay_id"];
 }else {

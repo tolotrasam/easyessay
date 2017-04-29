@@ -91,7 +91,7 @@ abstract class AuthenticationPlugin
      */
     public function getLoginFormURL()
     {
-        return './index.php';
+        return './index.html';
     }
 
     /**

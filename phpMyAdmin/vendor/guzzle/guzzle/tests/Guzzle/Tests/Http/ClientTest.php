@@ -266,9 +266,9 @@ class ClientTest extends \Guzzle\Tests\GuzzleTestCase
         $this->assertEquals('http://{a}/{b}', $client->getBaseUrl(false));
         $client->setConfig(array(
             'a' => 'test.com',
-            'b' => 'index.php'
+            'b' => 'index.html'
         ));
-        $this->assertEquals('http://test.com/index.php', $client->getBaseUrl());
+        $this->assertEquals('http://test.com/index.html', $client->getBaseUrl());
     }
 
     public function testCreatesRequestsWithDefaultValues()

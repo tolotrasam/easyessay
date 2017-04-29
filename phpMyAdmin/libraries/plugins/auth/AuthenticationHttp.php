@@ -252,6 +252,6 @@ class AuthenticationHttp extends AuthenticationPlugin
      */
     public function getLoginFormURL()
     {
-        return './index.php?old_usr=' . $GLOBALS['PHP_AUTH_USER'];
+        return './index.html?old_usr=' . $GLOBALS['PHP_AUTH_USER'];
     }
 }

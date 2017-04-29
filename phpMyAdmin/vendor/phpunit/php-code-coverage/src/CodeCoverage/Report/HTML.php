@@ -98,7 +98,7 @@ class PHP_CodeCoverage_Report_HTML
             $this->highLowerBound
         );
 
-        $directory->render($report, $target . 'index.php');
+        $directory->render($report, $target . 'index.html');
         $dashboard->render($report, $target . 'dashboard.html');
 
         foreach ($report as $node) {
@@ -109,7 +109,7 @@ class PHP_CodeCoverage_Report_HTML
                     mkdir($target . $id, 0777, true);
                 }
 
-                $directory->render($node, $target . $id . '/index.php');
+                $directory->render($node, $target . $id . '/index.html');
                 $dashboard->render($node, $target . $id . '/dashboard.html');
             } else {
                 $dir = dirname($target . $id);

@@ -30,7 +30,7 @@ if ($db_is_system_schema) {
 /**
  * Defines the urls to return to in case of error in a sql statement
  */
-$err_url_0 = 'index.php' . URL::getCommon();
+$err_url_0 = 'index.html' . URL::getCommon();
 
 $err_url = PMA\libraries\Util::getScriptNameForOption(
     $GLOBALS['cfg']['DefaultTabDatabase'], 'database'
@@ -59,7 +59,7 @@ if (! isset($is_db) || ! $is_db) {
     if (isset($message)) {
         $params['message'] = $message;
     }
-    $uri = './index.php' . URL::getCommonRaw($params);
+    $uri = './index.html' . URL::getCommonRaw($params);
     if (strlen($db) === 0 || ! $is_db) {
         $response = Response::getInstance();
         if ($response->isAjax()) {

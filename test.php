@@ -1,7 +1,7 @@
-<!--<meta http-equiv="refresh" content="0; url=app" />-->
 <?php
-session_start();
+require 'session.php';
 ?>
+<!--<meta http-equiv="refresh" content="0; url=app" />-->
 <html>
 <head>
     <title>Tolotra | Welcome to your new app!</title>

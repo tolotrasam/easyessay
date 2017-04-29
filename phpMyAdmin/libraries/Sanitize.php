@@ -33,7 +33,7 @@ class Sanitize
             './url.php?url=https%3a%2f%2f',
             './doc/html/',
             # possible return values from Util::getScriptNameForOption
-            './index.php?',
+            './index.html?',
             './server_databases.php?',
             './server_status.php?',
             './server_variables.php?',

@@ -131,7 +131,7 @@ echo '</legend>';
 // Display server list
 //
 echo PMA_displayFormTop(
-    'index.php', 'get',
+    'index.html', 'get',
     array(
         'page' => 'servers',
         'mode' => 'add'

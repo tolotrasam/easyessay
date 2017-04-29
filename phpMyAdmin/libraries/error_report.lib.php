@@ -148,7 +148,7 @@ function PMA_sanitizeUrl($url)
     // get script name
     preg_match("<([a-zA-Z\-_\d]*\.php)$>", $components["path"], $matches);
     if (count($matches) < 2) {
-        $script_name = 'index.php';
+        $script_name = 'index.html';
     } else {
         $script_name = $matches[1];
     }

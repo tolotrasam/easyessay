@@ -111,7 +111,7 @@ class NavigationHeader
         // prevent XSS, see PMASA-2013-9
         // if link has protocol, allow only http and https
         if (! Sanitize::checkLink($logoLink, true)) {
-            $logoLink = 'index.php';
+            $logoLink = 'index.html';
         }
         switch ($GLOBALS['cfg']['NavigationLogoLinkWindow']) {
         case 'new':
@@ -157,7 +157,7 @@ class NavigationHeader
         $retval = '<!-- LINKS START -->';
         $retval .= '<div id="navipanellinks">';
         $retval .= PMA\libraries\Util::getNavigationLink(
-            'index.php' . URL::getCommon(),
+            'index.html' . URL::getCommon(),
             $showText,
             __('Home'),
             $showIcon,
