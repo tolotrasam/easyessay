@@ -4,7 +4,7 @@ require(__DIR__.'/../session.php');
 ?>
 <html>
 <head>
-    <title>Tolotra | Welcome to your new app!</title>
+    <title>EasyEssay | Welcome to your new app!</title>
     <style type="text/css">
         body {
             background-color: white;
@@ -101,11 +101,11 @@ require(__DIR__.'/../session.php');
 <body>
 <div class="container">
     <div class="section friendly">
-        <h1><strong>Heroku | Welcome to your new app!</strong></h1>
+        <h1><strong>EasyEssay | Welcome to your new app!</strong></h1>
         <div class="article">
-            <p>Refer to the <a href="//devcenter.heroku.com/">documentation</a> if you need help deploying.</p>
+            <p>Refer to the <a href="app/essay.php?essay_id=809358">tutorial</a> if you need help using this app.</p>
 
-			<?php
+            <?php
 			/**
 			 * Created by PhpStorm.
 			 * User: Tolotra Samuel
