@@ -41,8 +41,8 @@ if ( isset( $_GET["essay_id"] ) ) {
 </head>
 <body>
 <!--<ul class="main-menu">-->
-<!--<!--    <li><a href="#!/view1">view1</a></li>-->-->
-<!--<!--    <li><a href="#!/view2">view2</a></li>-->-->
+<!--<!--    <li><a href="#!/view1">view1</a></li>-->
+<!--<!--    <li><a href="#!/view2">view2</a></li>-->
 <!---->
 <!--    <li><a href="../app">All Essays</a></li>-->
 <!--    <li><a href="essay.php">New Essay</a></li>-->
@@ -55,7 +55,7 @@ if ( isset( $_GET["essay_id"] ) ) {
 
 <div ng-view></div>
 
-<div>Angular seed app: <span app-version></span></div>
+<div>Loading... <span app-version></span></div>
 
 <!-- In production use:
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>

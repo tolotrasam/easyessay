@@ -60,6 +60,7 @@
 /*view1*/
 
 .boxes {
+    margin-top: 85px;
     overflow: auto;
     display: table;
     width: 100%;
@@ -88,7 +89,6 @@
     background: white;
     top: 0;
     width: 100%;
-    padding: 20px;
     z-index: 9999;
 }
 
@@ -173,7 +173,7 @@ div#form-btn {
     z-index: 99;
     margin: auto;
     display: block;
-    width: 52%;
+    width: 68%;
 }
 
 .redaction-box {
