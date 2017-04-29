@@ -33,11 +33,11 @@ $db = substr($url["path"], 1);
 
 /* Authentication type */
 $cfg['Servers'][$i]['auth_type'] = 'cookie';
-$cfg['Servers'][$i]['username'] = $username;
-$cfg['Servers'][$i]['password'] = $password;
+$cfg['Servers'][$i]['username'] = 'bbe62db07e55a3';
+$cfg['Servers'][$i]['password'] = '93ad1e26';
 
 /* Server parameters */
-$cfg['Servers'][$i]['host'] = $server;
+$cfg['Servers'][$i]['host'] = 'us-cdbr-iron-east-04.cleardb.net';
 
 $cfg['Servers'][$i]['compress'] = false;
 $cfg['Servers'][$i]['AllowNoPassword'] = false;
