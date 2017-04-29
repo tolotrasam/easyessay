@@ -39,6 +39,8 @@ $server = $url["host"];
 $username = $url["user"];
 $password = $url["pass"];
 $db = substr($url["path"], 1);
+print_r($url);
+	die();
 $conn = new mysqli($server, $username, $password, $db);
 if (mysqli_connect_errno())
 {
