@@ -1,0 +1,408 @@
+<div ng-bind-html="error_logs"></div>
+<div id="alert_flag_notification"></div>
+<div class="header">
+    <ul class="main-menu">
+        <!--    <li><a href="#!/view1">view1</a></li>-->
+        <!--    <li><a href="#!/view2">view2</a></li>-->
+
+        <li><a href="../app">All Essays</a></li>
+        <li><a href="essay.php">New Essay</a></li>
+    </ul>
+
+    <div id="save_essay_form">
+
+    <form ng-submit="save_essay()" >
+
+        <div class="stop-watch-container" ng-repeat="options in essay.stopwatches">
+            <div bb-stopwatch options="options">
+                <div >
+                    <div  class="stopWatch numbers">
+                        {{options.elapsedTime | stopwatchTime}}
+                    </div>
+                    <button class="btn" ng-click="startTimer()">Start</button>
+                    <button class="btn" ng-click="stopTimer()">Pause</button>
+                    <!--<button class="btn" ng-click="resetTimer()">Reset</button>-->
+                </div>
+            </div>
+            <!--<div class="log" ng-repeat="log in options.log">-->
+            <!--{{log/1000}} seconds-->
+            <!--</div>-->
+        </div>
+
+<div id="form-btn">
+        <label>Essay Title</label>: <input type="text" ng-model="essay.title" required="required"/>
+        <input type="submit" class="btn"  id="save" value="SAVE"/>
+        <input type="button" class="btn"  id="debug" value="Debug" ng-click="print_debug()"/>
+</div>
+    </form>
+    </div>
+</div>
+<div class="side-nav">
+    <img data-next="-1" ng-click="slide_navigation_from_arrow($event)" class="arrow navigation-left"
+         src="assets/images/left_arr.png">
+    <img data-next="1" ng-click="slide_navigation_from_arrow($event)" class="arrow navigation-right"
+         src="assets/images/right_arr.png">
+</div>
+<div class="boxes">
+    <div class="box box1">
+        <div id="Prompt">
+            <h1>Prompt</h1>
+            <div ng-repeat="i in  [1]">
+
+                <label>Paste your prompt here</label><br>
+                <textarea ng-keyup="register_keyword()" ng-model="essay.thesis">
+
+</textarea>
+
+            </div>
+        </div>
+        <div id="Definition">
+            <h1>Definitions</h1>
+            <div ng-repeat="keyword in  essay.keywords track by $index">
+
+
+                <label> <a href="https://en.oxforddictionaries.com/definition/{{keyword.label}}" target="_blank">{{keyword.label}}</a></label><br>
+                <textarea ng-model="keyword.definition">
+</textarea>
+                <span>{{thesis}}</span>
+            </div>
+
+        </div>
+    </div>
+    <div class="box box2">
+        <div id="Theme">
+            <div>
+                <h1>Thesis</h1>
+                {{essay.thesis}}
+
+            </div>
+            <div>
+                <h1>Reformulation</h1>
+                <span ng-repeat="keyword in essay.keywords">
+                {{keyword.definition}}
+            </span>
+            </div>
+            <div>
+                <h1>Write the theme here</h1>
+                <textarea ng-model="essay.theme">{{essay.theme}}</textarea>
+            </div>
+        </div>
+    </div>
+    <div class="box box3">
+        <div id="Brainstorm">
+            <h1>Brainstorm</h1>
+
+            <div ng-repeat="brainstorm in  essay.outline.dropzones['Idea Box'] track by $index">
+            <textarea ng-focus="add_brainstorm_field($index)"
+                      ng-model="brainstorm.content">{{brainstorm.content}}</textarea>
+            </div>
+            <input type="button" ng-click="add_brainstorm_field()" value="Add more">
+        </div>
+    </div>
+    <div class="box box4 nestedDemo">
+        <div class="fit-parent">
+            <h1 id="Organisation">Organisation</h1>
+            <div id="script-organisation">
+
+                <script type="text/ng-template" id="list.html">
+                    <ul dnd-list="list">
+                        <li ng-repeat="item in list"
+                            dnd-draggable="item"
+                            dnd-effect-allowed="move"
+                            dnd-moved="list.splice($index, 1)"
+                            dnd-selected="essay.outline.selected = item"
+                            ng-class="{selected: essay.outline.selected === item}"
+                            ng-include="item.type + '.html'">
+                        </li>
+                    </ul>
+                </script>
+
+                <script type="text/ng-template" id="container.html">
+                    <span class="container-element box box-blue">
+                <h3 ng-model="item.content" contenteditable data-directive class="container-element-content"
+                    strip-br="true">{{item.content}}</h3>
+                        <span ng-init="initialize_word_count(item)"
+                              class="word-count">{{item.wordcount}}</span>
+                <span ng-if="item.word_limit !== undefined && item.word_limit !==''">/<span>{{item.word_limit}}</span></span>
+                        <a ng-click="console.log('clicked url')"
+                           href="https://www.google.com/search?q={{essay.theme}}&{{item.content}}" target="_blank">Search</a> <a href="javascript:void(0)" ng-click="item.active = !item.active">{{item.active ? "Expand" : "Collapse"}}</a>
+                        <div class="slideDown"  ng-hide="item.active">
+                <div class="column" ng-repeat="list in item.columns" ng-include="'list.html'"></div>
+                            </div>
+                <div class="handle-container handle">
+                    <input type="button" value="Downgrade" ng-click="convert_container_to_item(item)">
+              </div>
+            </span>
+                </script>
+
+                <!-- Template for a normal list item -->
+                <script type="text/ng-template" id="item.html">
+                    <div class="item" strip-br="true" class="item" ng-model="item.content" ng-value="item.content"><p
+                            ng-model="item.content" contenteditable data-directive
+                            ng-focus='add_item_field(list, $index)'>
+                        {{item.content}}</p><span ng-init="initialize_word_count(item)"
+                                                  class="word-count">{{item.wordcount}}</span>
+                        <span ng-if="item.word_limit !== undefined && item.word_limit !==''">/<span>{{item.word_limit}}</span></span><input
+                                ng-click="convert_item_to_container(item)" type="button"
+                                value="Upgrade">
+                        <a ng-click="console.log('clicked url')"
+                           href="https://www.google.com/search?q={{essay.theme}} {{item.content}}"
+                           target="_blank">Search</a>
+
+                        <div class="handle-item handle">
+                        </div>
+                    </div>
+                </script>
+
+            </div>
+            <div class="organisation scrollable">
+                <!-- Main area with dropzones and source code -->
+                <div class="organisation main-area">
+                    <div class="row">
+                        <div ng-repeat="(zone, list) in essay.outline.dropzones">
+                            <div class="dropzone box box-yellow">
+                                <!-- The dropzone also uses the list template -->
+                                <h3 ng-model="zone" strip-br="true">[Development]</h3>
+                                <div ng-include="'list.html'"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div view-source="nested"></div>
+
+
+                </div>
+            </div>
+            <!-- Sidebar -->
+            <div class="col-md-2 sidebar">
+                <div>
+                    <label>Word Limit: </label><input
+                        ng-focus="split_keyword(essay.outline.dropzones['Idea Box'],essay.word_limit)"
+                        ng-init="split_keyword(essay.outline.dropzones['Idea Box'],essay.word_limit)" type="number"
+                        ng-keyup="split_keyword(essay.outline.dropzones['Idea Box'],essay.word_limit)"
+                        ng-model="essay.word_limit"/>
+                </div>
+                <div class="toolbox  box-grey box-padding">
+                    <h3>New Elements</h3>
+                    <ul>
+                        <!-- The toolbox only allows to copy objects, not move it. After a new
+                             element was created, dnd-copied is invoked and we generate the next id -->
+                        <li ng-repeat="item in essay.outline.templates"
+                            dnd-draggable="item"
+                            dnd-effect-allowed="copy"
+                            dnd-copied="item.id = item.id + 1"
+                        >
+                            <button type="button" class="btn btn-default btn-lg">{{item.type}}
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+
+                <div ng-if="essay.outline.selected" class=" box-grey box-padding">
+                    <h3>Selected</h3>
+                    <strong>Type: </strong> {{essay.outline.selected.type}}<br>
+                    <input type="text" ng-model="essay.outline.selected.id" class="form-control"
+                           style="margin-top: 5px"/>
+                </div>
+
+                <div class="trashcan  box-grey box-padding">
+                    <!-- If you use [] as referenced list, the dropped elements will be lost -->
+                    <h3>Trashcan</h3>
+                    <ul dnd-list="[]">
+                        <li><img src="assets/images/trashcan.png"></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <h2>Generated Model</h2>
+            <pre>{{modelAsJson | json}}</pre>
+        </div>
+    </div>
+    <div class="box box5 outline">
+
+        <div id="Outline">
+            <h1>Outline summary</h1>
+        </div>
+
+        <script type="text/ng-template" id="container-outline.html">
+            <span class="container-element box box-blue">
+                <span ng-model="item.content" contenteditable data-directive
+                      strip-br="true">Bucket {{item.content}}</span>
+
+                <div class="column" ng-repeat="list in item.columns" ng-include="'list-outline.html'"></div>
+                <div class="clearfix"></div>
+            </span>
+        </script>
+
+        <!-- Template for a normal list item -->
+        <script type="text/ng-template" id="item-outline.html">
+            <div><span contenteditable data-directive strip-br="true" class="item" ng-model="item.content"
+                       ng-value="item.content">{{item.content}}</span>
+            </div>
+        </script>
+
+        <script type="text/ng-template" id="list-outline.html">
+            <ul dnd-list="list">
+                <li ng-repeat="item in list"
+                    dnd-draggable="item"
+                    dnd-effect-allowed="move"
+                    dnd-moved="list.splice($index, 1)"
+                    dnd-selected="essay.outline.selected = item"
+                    ng-class="{selected: essay.outline.selected === item}"
+                    ng-if="item.content!== '' && item.content !==undefined"
+                    ng-include="item.type + '-outline.html'">
+                </li>
+            </ul>
+        </script>
+        <div class="outline-container">
+            <h2>[Introduction]</h2>
+            <div class="row">
+                <div ng-repeat="(zone, list) in essay.outline.dropzones " ng-if="zone==='Idea Box'">
+                    <div class="dropzone box box-yellow">
+                        <!-- The dropzone also uses the list template -->
+                        <h2>[Development]</h2>
+                        <div ng-include="'list-outline.html'"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div view-source="nested"></div>
+
+            <h2>[Conclusion]</h2>
+        </div>
+
+
+    </div>
+    <div class="box box6 redaction">
+        <div id="Redaction">
+            <h1>Redaction</h1>
+        </div>
+        <script type="text/ng-template" id="list-redaction.html">
+            <span dnd-list="list">
+                <span ng-repeat="item in list"
+                      dnd-draggable="item"
+                      dnd-effect-allowed="move"
+                      dnd-moved="list.splice($index, 1)"
+                      dnd-selected="essay.outline.selected = item"
+                      ng-if="item.content!== '' && item.content !==undefined"
+                      ng-class="{selected: essay.outline.selected === item}"
+                      ng-include="item.type + '-redaction.html'">
+                </span>
+            </span>
+        </script>
+        <!-- This template is responsible for rendering a container element. It uses
+         the above list template to render each container column -->
+        <script type="text/ng-template" id="container-redaction.html">
+
+            <span class="container-element box box-blue">
+                <span ng-model="item.content" contenteditable data-directive
+                      strip-br="true">{{item.content}}</span>  <span ng-init="initialize_word_count(item)"
+                                                                     class="word-count">{{item.wordcount}}</span>
+            <span ng-if="item.word_limit !== undefined && item.word_limit !==''">/<span>{{item.word_limit}}</span></span>
+            <span ng-keyup="initialize_word_count(item)" ng-model="item.rendering" class="content-frame" contenteditable
+                  data-directive></span>
+                <span class="column" ng-repeat="list in item.columns" ng-include="'list-redaction.html'"></span>
+            </span>
+        </script>
+
+        <!-- Template for a normal list item -->
+        <script type="text/ng-template" id="item-redaction.html">
+
+            <span contenteditable data-directive strip-br="true" class="item-redaction" ng-model="item.content"
+                  ng-value="item.content"><p>{{item.content}}</p></span>
+            <span ng-init="initialize_word_count(item)" class="word-count">{{item.wordcount}}</span>
+            <span ng-if="item.word_limit !== undefined && item.word_limit !==''">/<span>{{item.word_limit}}</span></span>
+            <span ng-keyup="initialize_word_count(item)" ng-model="item.rendering" class="content-frame" contenteditable
+                  data-directive></span>
+        </script>
+
+        <!-- Main area with dropzones and source code -->
+        <div class="redaction-box">
+            <div class="introduction">
+                <h3>[Introduction]</h3>
+                <span ng-init="initialize_word_count(essay.introduction)"> {{essay.introduction.wordcount}}</span>
+                <div contenteditable="true" data-directive class="ic-render"
+                     ng-keyup="initialize_word_count(essay.introduction)" ng-model="essay.introduction.rendering"></div>
+            </div>
+            <div class="row-redaction">
+                <div ng-repeat="(zone, list) in essay.outline.dropzones " ng-if="zone==='Idea Box'"
+                     class="content-redaction">
+                    <div class="dropzone box box-yellow">
+                        <!-- The dropzone also uses the list template -->
+                        <h3>[Development]</h3>
+                        <div ng-include="'list-redaction.html'"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div view-source="nested"></div>
+            <div class="conclusion">
+                <h3>[Conclusion]
+                    <span ng-init="initialize_word_count(essay.conclusion)"> {{essay.conclusion.wordcount}}</span>
+                    <div contenteditable="true" data-directive class="ic-render"
+                         ng-keyup="initialize_word_count(essay.conclusion)" ng-model="essay.conclusion.rendering"></div>
+            </div>
+        </div>
+
+    </div>
+    <div class="box box8 render">
+        <div id="Render">
+            <h1>Rendering</h1>
+        </div>
+        <div id="render-action"><input type="button" ng-click="copy_rendered(essay.outline.dropzones['Idea Box'])"
+                                       value="Copy"></div>
+        <script type="text/ng-template" id="list-render.html">
+            <span dnd-list="list">
+                <span ng-repeat="item in list"
+
+                      dnd-moved="list.splice($index, 1)"
+                      dnd-selected="essay.outline.selected = item"
+                      ng-class="{selected: essay.outline.selected === item}"
+                      ng-include="item.type + '-render.html'">
+                </span>
+            </span>
+        </script>
+        <!-- This template is responsible for rendering a container element. It uses
+         the above list template to render each container column -->
+        <script type="text/ng-template" id="container-render.html">
+            <span class="container-element box-blue">
+                <span ng-model="item.rendering" class="render-frame" contenteditable data-directive></span>
+                <span class="column" ng-repeat="list in item.columns" ng-include="'list-render.html'"></span>
+            </span>
+            <br>
+        </script>
+
+        <!-- Template for a normal list item -->
+        <script type="text/ng-template" id="item-render.html">
+            <span ng-model="item.rendering" class="render-frame" contenteditable data-directive></span>
+        </script>
+        <!-- Main area with dropzones and source code -->
+        <div class="col-md-10">
+            <div id="[Introduction]"> {{essay.introduction.rendering}}</div>
+            <br>
+            <div class="row-render">
+                <div ng-repeat="(zone, list) in essay.outline.dropzones " ng-if="zone==='Idea Box'">
+                    <div class="dropzone box-yellow">
+                        <!-- The dropzone also uses the list template -->
+                        <div ng-include="'list-render.html'"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div view-source="nested"></div>
+            <div id="[Conclusion]"> {{essay.conclusion.rendering}}</div>
+            <br>
+        </div>
+    </div>
+    <div class="box box7">
+        <div id="IC">
+            <h1>Introduction and Conclusion</h1>
+        </div>
+    </div>
+</div>
+<div id="essay_debug">
+    <pre>
+  {{essay | json}}
+</pre>
+</div>

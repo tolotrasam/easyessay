@@ -1,0 +1,507 @@
+/* app css stylesheet */
+#alert_flag_notification {
+    position: fixed;
+    min-height: 20px;
+    border: solid;
+    bottom: 0;
+    right: 0;
+    min-width: 60px;
+    width: 200px;
+    display: none;
+    left: 50%;
+    margin-left: -100px;
+    background-color: #383838;
+    color: #F0F0F0;
+    font-family: Calibri;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 2px;
+    -webkit-box-shadow: 0px 0px 24px -1px rgba(56, 56, 56, 1);
+    -moz-box-shadow: 0px 0px 24px -1px rgba(56, 56, 56, 1);
+    box-shadow: 0px 0px 24px -1px rgba(56, 56, 56, 1);
+}
+
+.main-menu {
+    list-style: none;
+    border-bottom: 0.1em solid black;
+    margin-bottom: 2em;
+    padding: 0 0 0.5em;
+    z-index: 9999;
+    margin: 10px;
+    position: absolute;
+    display: inline-flex;
+    margin-bottom: 10px;
+}
+.main-menu > li {
+    padding-left: 10px;
+}
+.menu {
+
+}
+
+.menu:before {
+    content: "[";
+}
+
+.menu:after {
+    content: "]";
+}
+
+.menu > li {
+    display: inline;
+}
+
+.menu > li + li:before {
+    content: "|";
+    padding-right: 0.3em;
+}
+
+/*view1*/
+
+.boxes {
+    overflow: auto;
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.arrow {
+    cursor: pointer;
+    z-index: 10;
+}
+
+.arrow.navigation-right {
+    position: fixed;
+    top: 50%;
+    right: 0;
+}
+
+.arrow.navigation-left {
+    position: fixed;
+    top: 50%;
+    left: 0;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.stopWatch {
+    padding: 5px;
+    background: linear-gradient(top, #222, #eee);
+    border: 7px solid #efefef;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 10px auto;
+    background: white;
+    box-shadow: inset 0 -2px 10px 1px rgba(0, 0, 0, 0.75),
+    0 5px 20px -10px rgba(0, 0, 0, 1);
+}
+
+.stop-watch-container {
+    display: inline-block;
+}
+
+
+/*
+animation:*/
+
+.slideDown.ng-hide {
+    max-height:0;
+    transition:max-height 0.9s ease;
+    overflow:hidden;
+    position:relative;
+    display:block!important;
+
+}
+
+.slideDown {
+    max-height: 2000px;
+    height:auto;
+    display: inline-block;
+    width:100%;
+    transition:max-height 0.9s ease;
+    position:relative;
+}
+
+.slideDown.ng-hide-remove,
+.slideDown.ng-hide-add {
+    /* remember, the .hg-hide class is added to element
+    when the active class is added causing it to appear
+    as hidden. Therefore set the styling to display=block
+    so that the hide animation is visible */
+
+}
+
+
+.slideDown.ng-hide-add {
+    animation-name: hide;
+    -webkit-animation-name: hide;
+
+    animation-duration: .5s;
+    -webkit-animation-duration: .5s;
+
+    animation-timing-function: ease-in;
+    -webkit-animation-timing-function: ease-in;
+}
+
+
+
+.slideDown.ng-hide-remove {
+    animation-name: show;
+    -webkit-animation-name: show;
+
+    animation-duration: .5s;
+    -webkit-animation-duration: .5s;
+
+    animation-timing-function: ease-out;
+    -webkit-animation-timing-function: ease-out;
+}
+
+
+div#form-btn {
+    display: inline;
+}
+
+#save_essay_form {
+    z-index: 99;
+    margin: auto;
+    display: block;
+    width: 52%;
+}
+
+.redaction-box {
+    width: 96%;
+}
+
+textarea {
+    margin-top: 10px;
+    margin-left: 50px;
+    width: 500px;
+    height: auto;
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.07);
+    border-image: none;
+    border-radius: 6px 6px 6px 6px;
+    border-style: none solid solid none;
+    border-width: medium 1px 1px medium;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12) inset;
+    color: #555555;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1em;
+    line-height: 1.4em;
+    padding: 5px 8px;
+    transition: background-color 0.2s ease 0s;
+}
+
+.ic-render {
+    min-width: 500px;
+    min-height: 20px;
+    border: solid;
+}
+
+.box {
+    overflow: auto;
+    padding-left: 23px;
+    /*display: table-cell;*/
+    text-align: center;
+    vertical-align: middle;
+    word-wrap: break-word;
+    width: 100%;
+}
+
+.box1 {
+    background: orange;
+}
+
+.box2 {
+    background: #00dc00;
+}
+
+.box3 {
+    background: yellow;
+}
+
+.box4 {
+    background: red;
+}
+
+.box5 {
+    background: #ff0b88;
+}
+
+.box8 {
+    padding-left: 60px;
+    background: cornflowerblue;
+}
+
+.box5 .box, .box6 .box, .box8 .box {
+    text-align: left !important;
+}
+
+.box.box5, .box.box6, .box.box8 {
+    text-align: left !important;
+}
+
+.outline-container {
+    padding-left: 44px;
+}
+
+.content-frame {
+    border: solid 1px black;
+    font-size: 21px;
+    width: 32px;
+    padding: 2px;
+    line-height: 2;
+}
+
+.item-redaction {
+    font-size: 10px;
+    color: rgba(0, 0, 0, 0.71);
+}
+
+.outline .box {
+    display: initial;
+}
+
+.handle {
+
+}
+
+.bucket {
+    float: left;
+    display: table;
+    min-height: 300px;
+    width: 300px;
+    margin: 10px;
+    border: solid 1px white;
+}
+
+.bucket-box_bucket {
+    display: table-cell;
+    /*text-align: center;*/
+    vertical-align: middle;
+}
+
+.bucket-element {
+    margin: 10px;
+    background: rgba(255, 255, 255, 0.55);
+}
+
+.sidebar {
+    width: 496px;
+    display: inline-block;
+    white-space: normal;
+    vertical-align: top;
+}
+
+.fit-parent {
+    width: 100%;
+    height: 100%;
+    white-space: nowrap;
+}
+
+.main-area {
+    height: 500px;
+}
+
+.organisation.scrollable {
+    display: inline-block;
+    white-space: normal;
+    width: auto;
+    height: 100%;
+    overflow-y: auto;
+    width: 572px;
+}
+
+/***************************** Dropzone Styling *****************************/
+
+/**
+ * The dnd-list should always have a min-height,
+ * otherwise you can't drop to it once it's empty
+ */
+.nestedDemo .dropzone ul[dnd-list] {
+    margin: 0px;
+    min-height: 42px;
+    padding-left: 0px;
+}
+
+.nestedDemo .dropzone li {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    display: block;
+    padding: 0px;
+}
+
+/**
+ * Reduce opacity of elements during the drag operation. This allows the user
+ * to see where he is dropping his element, even if the element is huge. The
+ * .dndDragging class is automatically set during the drag operation.
+ */
+.nestedDemo .dropzone .dndDragging {
+    opacity: 0.7;
+}
+
+/**
+ * The dndDraggingSource class will be applied to the source element of a drag
+ * operation. It makes sense to hide it to give the user the feeling that he's
+ * actually moving it. Note that the source element has also .dndDragging class.
+ */
+.nestedDemo .dropzone .dndDraggingSource {
+    display: none;
+}
+
+/**
+ * An element with .dndPlaceholder class will be added as child of the dnd-list
+ * while the user is dragging over it.
+ */
+.nestedDemo .dropzone .dndPlaceholder {
+    background-color: #ddd;
+    display: block;
+    min-height: 42px;
+}
+
+/***************************** Element Selection *****************************/
+
+.nestedDemo .dropzone .selected .item {
+    color: #3c763d;
+    background-color: #dff0d8;
+}
+
+.nestedDemo .dropzone .selected .box {
+    border-color: #d6e9c6;
+}
+
+.nestedDemo .dropzone .selected .box > h3 {
+    background-color: #dff0d8;
+    background-image: linear-gradient(to bottom, #dff0d8 0, #d0e9c6 100%);
+    border-color: #d6e9c6;
+    color: #3c763d;
+}
+
+/***************************** Element type specific styles *****************************/
+
+.nestedDemo .dropzone .item {
+    padding: 10px 15px;
+}
+
+.nestedDemo .dropzone .container-element {
+    margin: 10px;
+}
+
+.nestedDemo .dropzone .container-element .column {
+    padding: 10px;
+    float: left;
+    min-width: 80%;
+    margin: 15px;
+}
+
+/***************************** Toolbox *****************************/
+
+.nestedDemo .toolbox ul {
+    cursor: move;
+    list-style: none;
+    padding-left: 0px;
+}
+
+.nestedDemo .toolbox button {
+    margin: 5px;
+    opacity: 1.0;
+    width: 123px;
+}
+
+.nestedDemo .toolbox .dndDragging {
+    opacity: 0.5;
+}
+
+.nestedDemo .toolbox .dndDraggingSource {
+    opacity: 1.0;
+}
+
+/***************************** Trashcan *****************************/
+
+.nestedDemo .trashcan ul {
+    list-style: none;
+    padding-left: 0px;
+}
+
+.nestedDemo .trashcan img {
+    width: 100%;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.nestedDemo .trashcan .dndDragover img {
+    width: 100%;
+    -webkit-filter: none;
+    -moz-filter: none;
+    filter: none;
+}
+
+.nestedDemo .trashcan .dndPlaceholder {
+    display: none;
+}
+
+.box > h3 {
+    color: #333;
+    border-color: #ddd;
+    border-bottom: 1px solid transparent;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+    background-repeat: repeat-x;
+    display: block;
+    font-size: 16px;
+    padding: 10px 15px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.box-padding {
+    padding: 15px;
+}
+
+.box-padding > h3 {
+    margin: -15px;
+    margin-bottom: 15px;
+}
+
+.box-grey {
+    border-color: #ddd;
+}
+
+.box-grey > h3 {
+    background-color: #f5f5f5;
+    background-image: -webkit-linear-gradient(top, #f5f5f5 0, #e8e8e8 100%);
+    background-image: linear-gradient(to bottom, #f5f5f5 0, #e8e8e8 100%);
+}
+
+.box-blue {
+    border-color: #bce8f1;
+}
+
+.box-blue > h3 {
+    color: #31708f;
+    background-color: #d9edf7;
+    border-color: #bce8f1;
+    background-image: -webkit-linear-gradient(top, #d9edf7 0, #c4e3f3 100%);
+    background-image: linear-gradient(to bottom, #d9edf7 0, #c4e3f3 100%);
+}
+
+.box-yellow {
+    border-color: #faebcc;
+}
+
+.box-yellow > h3 {
+    color: #8a6d3b;
+    background-color: #fcf8e3;
+    border-color: #faebcc;
+    background-image: -webkit-linear-gradient(top, #fcf8e3 0, #faf2cc 100%);
+    background-image: linear-gradient(to bottom, #fcf8e3 0, #faf2cc 100%);
+}

@@ -1,0 +1,1107 @@
+{
+  "outline": {
+    "selected": {
+      "type": "container",
+      "id": "1",
+      "columns": [
+        [
+          {
+            "content": "Challenges",
+            "type": "item",
+            "wordcount": 41,
+            "word_limit": 37,
+            "$$hashKey": "object:460",
+            "rendering": "The main challenges while developing the app was to learn every concept on the go. Starting from how to install Android Studio to how to implement voice recognition API, all the compenents of the app has been learnt while developing it."
+          },
+          {
+            "content": "Progress by time",
+            "type": "item",
+            "wordcount": 58,
+            "word_limit": 37,
+            "$$hashKey": "object:461",
+            "rendering": "In terms of pace of develpment, I would comment that it greatly depended on the needs on the concerned stakeholders such as the end users to the staff members. As we've seen previously, the app is built based on feedback and itteration. The first version of August 2016 is not anymore present in April 2017 because of feedback. "
+          },
+          {
+            "type": "item",
+            "wordcount": 40,
+            "content": "Real need (Next to come)",
+            "word_limit": 37,
+            "$$hashKey": "object:462",
+            "rendering": "And finally, the next step of the develpment would be to implement the database on top of the ALU database and have every staff stakeholder on board. That is the last step before the final release. That  concluded this documentation.  "
+          },
+          {
+            "type": "container",
+            "id": "1",
+            "columns": [
+              [
+                {
+                  "content": "Challenges",
+                  "type": "item",
+                  "wordcount": 41,
+                  "word_limit": 37,
+                  "rendering": "The main challenges while developing the app was to learn every concept on the go. Starting from how to install Android Studio to how to implement voice recognition API, all the compenents of the app has been learnt while developing it.",
+                  "$$hashKey": "object:2208"
+                },
+                {
+                  "content": "Progress by time",
+                  "type": "item",
+                  "wordcount": 58,
+                  "word_limit": 37,
+                  "rendering": "In terms of pace of develpment, I would comment that it greatly depended on the needs on the concerned stakeholders such as the end users to the staff members. As we've seen previously, the app is built based on feedback and itteration. The first version of August 2016 is not anymore present in April 2017 because of feedback. ",
+                  "$$hashKey": "object:2209"
+                },
+                {
+                  "type": "item",
+                  "wordcount": 40,
+                  "content": "Real need (Next to come)",
+                  "word_limit": 37,
+                  "rendering": "And finally, the next step of the develpment would be to implement the database on top of the ALU database and have every staff stakeholder on board. That is the last step before the final release. That  concluded this documentation.  ",
+                  "$$hashKey": "object:2210"
+                },
+                {
+                  "type": "item",
+                  "wordcount": 0,
+                  "$$hashKey": "object:2211"
+                }
+              ],
+              []
+            ],
+            "content": "Development Process ",
+            "wordcount": 14,
+            "word_limit": 111,
+            "rendering": "Finally, let's discuss about the developement process including the challenges and the next steps.",
+            "$$hashKey": "object:2177"
+          },
+          {
+            "type": "item",
+            "wordcount": 0,
+            "$$hashKey": "object:463"
+          }
+        ],
+        []
+      ],
+      "content": "Development Process ",
+      "wordcount": 14,
+      "word_limit": 111,
+      "$$hashKey": "object:201",
+      "rendering": "Finally, let's discuss about the developement process including the challenges and the next steps."
+    },
+    "templates": [
+      {
+        "type": "item",
+        "id": 1,
+        "$$hashKey": "object:96"
+      },
+      {
+        "type": "container",
+        "id": 1,
+        "content": "Bucket",
+        "columns": [
+          [
+            {
+              "type": "item",
+              "id": 1
+            }
+          ]
+        ],
+        "$$hashKey": "object:97"
+      }
+    ],
+    "dropzones": {
+      "Idea Box": [
+        {
+          "type": "container",
+          "wordcount": 27,
+          "content": "Basics info",
+          "word_limit": 333,
+          "columns": [
+            [
+              {
+                "type": "container",
+                "id": 1,
+                "content": "What is the campus Live app?",
+                "columns": [
+                  [
+                    {
+                      "type": "container",
+                      "id": 1,
+                      "wordcount": 66,
+                      "content": "What is the problem",
+                      "word_limit": 56,
+                      "columns": [
+                        [
+                          {
+                            "type": "item",
+                            "id": 1,
+                            "wordcount": 31,
+                            "content": "overwheleming workload ",
+                            "word_limit": 19,
+                            "rendering": "First of all, the ALU students generally have a very heavy schedule. They struggle to accomplish every required tasks while keeping a balanced lifestyle such as entertaining or building social bonds.",
+                            "$$hashKey": "object:907"
+                          },
+                          {
+                            "type": "item",
+                            "wordcount": 35,
+                            "content": "Decentralised data",
+                            "word_limit": 19,
+                            "rendering": "Secondly, the resources destined to help the students to face this daily challenges are scattered across multiple platforms, such as emails, google slides, online pdf. Therefore, productivity suffers. (Example of resource: Maintenance form, transport schedule...) ",
+                            "$$hashKey": "object:908"
+                          },
+                          {
+                            "type": "item",
+                            "wordcount": 38,
+                            "content": "Convenience",
+                            "word_limit": 19,
+                            "rendering": "Finally, not only the platforms are scattered but they are also not convenient to use. For instance, reading a google spreadsheet is not the most convenient way to find the lunch menu if you are on the bus. ",
+                            "$$hashKey": "object:909"
+                          },
+                          {
+                            "type": "item",
+                            "wordcount": 0,
+                            "$$hashKey": "object:910"
+                          }
+                        ]
+                      ],
+                      "rendering": "The African Leadership University (ALU) is a two year old University that aims to nurture the next generation of leaders in Africa. It aims to open 25 campuses across Africa expecting to educate 25000 students at a time by 2030. In 2017, around 200 students are currently enrolled at the African Leadership College in the island of Mauritius, and the students are already facing multiple issues.",
+                      "$$hashKey": "object:404"
+                    },
+                    {
+                      "content": "Introducing the campus live",
+                      "type": "container",
+                      "wordcount": 50,
+                      "rendering": "Now that we've seen the diverse challenge that the first batch of ALU students are already facing, we should reflected on how the situation will become with 25000 students. In the spirit of ownership and proactivity we are introducing a solution to solve those problems.  The solution is called CampusLive.",
+                      "word_limit": 56,
+                      "columns": [
+                        [
+                          {
+                            "type": "item",
+                            "id": 1,
+                            "wordcount": 28,
+                            "content": "A mobile app designed for ALU studetns",
+                            "word_limit": 19,
+                            "rendering": "The CampusLive is a mobile app designed for a by ALU student that provides every student the ability to handle their daily routine at ALU effectively and conveniently.",
+                            "$$hashKey": "object:915"
+                          },
+                          {
+                            "type": "item",
+                            "wordcount": 22,
+                            "content": "Campus Live purpose: give the student ability",
+                            "rendering": "In details, the purpose of the app is to improve the student's accessibility to the resources that are already present on campus.",
+                            "word_limit": 19,
+                            "$$hashKey": "object:916"
+                          },
+                          {
+                            "type": "item",
+                            "wordcount": 28,
+                            "content": "Provide student the best interface of centralization of the aspect of their life at ALU",
+                            "word_limit": 19,
+                            "rendering": "In addition, the app is aiming to be the best interface that organize and centralize all the data and resources that the students need on a daily basis.",
+                            "$$hashKey": "object:917"
+                          },
+                          {
+                            "type": "item",
+                            "wordcount": 0,
+                            "$$hashKey": "object:918"
+                          }
+                        ]
+                      ],
+                      "$$hashKey": "object:405"
+                    },
+                    {
+                      "type": "item",
+                      "id": 1,
+                      "wordcount": 0,
+                      "$$hashKey": "object:406"
+                    }
+                  ]
+                ],
+                "wordcount": 30,
+                "word_limit": 111,
+                "rendering": "What is CampusLive? In order to get a clear sense about the app, let's answer this question in considering perspective of an individual who has no ALU context at all. ",
+                "$$hashKey": "object:183"
+              },
+              {
+                "type": "container",
+                "wordcount": 32,
+                "content": "What is makes the solution diferent",
+                "word_limit": 111,
+                "columns": [
+                  [
+                    {
+                      "type": "container",
+                      "id": 2,
+                      "content": "It's a mobile app!",
+                      "columns": [
+                        [
+                          {
+                            "type": "item",
+                            "id": 1,
+                            "wordcount": 16,
+                            "content": "Handy convenient ",
+                            "word_limit": 12,
+                            "rendering": "First of all, the CampusLive is a mobile which makes it more convenient, and accessible offline.",
+                            "$$hashKey": "object:923"
+                          },
+                          {
+                            "type": "item",
+                            "wordcount": 17,
+                            "content": "Accessible offline and and fast",
+                            "word_limit": 12,
+                            "rendering": "Secondly, once install on your mobile, student will access the resources faster than on any other plateform.",
+                            "$$hashKey": "object:924"
+                          },
+                          {
+                            "type": "item",
+                            "wordcount": 18,
+                            "content": "Centralization",
+                            "rendering": "Last but not least, the app possess the unique virtue of centralizing every information that the students need.  ",
+                            "word_limit": 12,
+                            "$$hashKey": "object:925"
+                          },
+                          {
+                            "type": "item",
+                            "wordcount": 0,
+                            "$$hashKey": "object:926"
+                          }
+                        ]
+                      ],
+                      "wordcount": 20,
+                      "word_limit": 37,
+                      "rendering": "Yet decentralized, all the currently used platforms that ALU is using share a common drawback: they are all web-based apps.",
+                      "$$hashKey": "object:410"
+                    },
+                    {
+                      "content": "User interface usage, ",
+                      "type": "container",
+                      "wordcount": 21,
+                      "word_limit": 37,
+                      "columns": [
+                        [
+                          {
+                            "type": "item",
+                            "id": 1,
+                            "wordcount": 24,
+                            "content": "Voice",
+                            "word_limit": 19,
+                            "rendering": "The app allows the student to data from vocal instruction. Now, getting the bus is as easy as asking: When is the next bus?",
+                            "$$hashKey": "object:931"
+                          },
+                          {
+                            "type": "item",
+                            "wordcount": 58,
+                            "content": "Sticky buuble",
+                            "word_limit": 19,
+                            "rendering": "Secondly, unlike any other apps, the student doesn't need to interrupt their activity on their mobile in order to access the CampusLive's content. It can be turned into a gadget one a single click, draw on top of whatever is on screen for few seconds and close immediately after the student obtained the information they were aiming to.",
+                            "$$hashKey": "object:932"
+                          },
+                          {
+                            "type": "item",
+                            "wordcount": 0,
+                            "$$hashKey": "object:933"
+                          }
+                        ]
+                      ],
+                      "rendering": "On top of it's mobile integration, the app offers an unique user experience that is oriented toward making the accessibilty faster.",
+                      "$$hashKey": "object:411"
+                    },
+                    {
+                      "type": "container",
+                      "id": 1,
+                      "wordcount": 18,
+                      "content": "Human centered",
+                      "columns": [
+                        [
+                          {
+                            "type": "item",
+                            "wordcount": 33,
+                            "content": "Built for student",
+                            "word_limit": 12,
+                            "rendering": "We are taking a HCD approach while developing the feature of the app. So far, 30% of the student body has either tested or given relevant feedback that made up the current features.",
+                            "$$hashKey": "object:937"
+                          },
+                          {
+                            "type": "item",
+                            "wordcount": 24,
+                            "content": "Build by student",
+                            "word_limit": 12,
+                            "rendering": "Similarly, the developers and contributors of the app are students, meaning that they share and relate with the problems that the app is solving. ",
+                            "$$hashKey": "object:938"
+                          },
+                          {
+                            "type": "item",
+                            "id": 1,
+                            "wordcount": 32,
+                            "content": "Built by Flexible",
+                            "word_limit": 12,
+                            "rendering": "Being built for and by ALU students, it makes the app unique in its genre because of its flexibility. Other platforms cannot be as flexible and tailored as the CampusLive app is.",
+                            "$$hashKey": "object:939"
+                          },
+                          {
+                            "type": "item",
+                            "wordcount": 0,
+                            "columns": [
+                              [
+                                {
+                                  "type": "item",
+                                  "id": 1,
+                                  "wordcount": 0
+                                }
+                              ]
+                            ],
+                            "content": "",
+                            "$$hashKey": "object:940"
+                          }
+                        ]
+                      ],
+                      "word_limit": 37,
+                      "rendering": "Finally, the CampusLive app is the only plateform that is totally human centered designed around  ALU student .",
+                      "$$hashKey": "object:412"
+                    },
+                    {
+                      "type": "item",
+                      "wordcount": 0,
+                      "$$hashKey": "object:413"
+                    }
+                  ]
+                ],
+                "rendering": "We've seen the purpose what drives us to build and continue to improve the app. However, it is equally important to emphasize on what makes the app better than any existing solution. ",
+                "$$hashKey": "object:184"
+              },
+              {
+                "type": "container",
+                "wordcount": 37,
+                "content": "App integration and statute",
+                "columns": [
+                  [
+                    {
+                      "type": "container",
+                      "id": 1,
+                      "wordcount": 0,
+                      "columns": [
+                        [
+                          {
+                            "type": "item",
+                            "id": 1,
+                            "wordcount": 25,
+                            "content": "Tested by 30 students",
+                            "word_limit": 19,
+                            "rendering": "Since its first version on August 2016, the app has been tested by roughly 50 students which makes up around 30% of the student body. ",
+                            "$$hashKey": "object:949"
+                          },
+                          {
+                            "type": "item",
+                            "wordcount": 21,
+                            "content": "Available as a test on App store",
+                            "word_limit": 19,
+                            "rendering": "The app is available as a beta version on the Android devices and downloadle on the PlayStore at the url: https://play.google.com/store/apps/details?id=com.tolotranet.livecampus&amp;hl=en ",
+                            "$$hashKey": "object:950"
+                          },
+                          {
+                            "type": "item",
+                            "wordcount": 0,
+                            "$$hashKey": "object:951"
+                          }
+                        ]
+                      ],
+                      "content": "Statutes",
+                      "word_limit": 37,
+                      "$$hashKey": "object:418"
+                    },
+                    {
+                      "content": "Cooperation with the Staff",
+                      "type": "container",
+                      "wordcount": 22,
+                      "word_limit": 37,
+                      "columns": [
+                        [
+                          {
+                            "type": "item",
+                            "wordcount": 19,
+                            "content": "Presented to the Operation and student life team",
+                            "word_limit": 12,
+                            "rendering": "In that spirit, the app has been presented and approved by the student life and operations departerment at ALU.",
+                            "$$hashKey": "object:955"
+                          },
+                          {
+                            "type": "item",
+                            "id": 1,
+                            "wordcount": 34,
+                            "content": "To consistently update the data",
+                            "word_limit": 12,
+                            "rendering": "Collaborations with department are keys in making the app working because the app depends on consistent and accurate sourcing of data and we try as best to involve concerned parties into sustaining the app. ",
+                            "$$hashKey": "object:956"
+                          },
+                          {
+                            "type": "item",
+                            "wordcount": 26,
+                            "content": "Collaboration with the tech team",
+                            "word_limit": 12,
+                            "rendering": "Finally, current collaboration with the tech departement appears to be the brigde between the app and the ALU departments and gives hope in fostering those collaboration  ",
+                            "$$hashKey": "object:957"
+                          },
+                          {
+                            "type": "item",
+                            "wordcount": 0,
+                            "$$hashKey": "object:958"
+                          }
+                        ]
+                      ],
+                      "rendering": "While students are eager to download the final version of the app, collaboration with the ALU staff members is a primoridial step.",
+                      "$$hashKey": "object:419"
+                    },
+                    {
+                      "type": "container",
+                      "id": 1,
+                      "content": "Legal terms",
+                      "columns": [
+                        [
+                          {
+                            "content": "Terms and condition",
+                            "type": "item",
+                            "wordcount": 46,
+                            "word_limit": 12,
+                            "$$hashKey": "object:963",
+                            "rendering": "All users that download and register as user in the app must comply to the terms and conditions thereby. Any attempt to compromise any other user's experience such as hacking or spamming are strickly prohibited. They administrators reserve the rights of suspending such users from usage."
+                          },
+                          {
+                            "type": "item",
+                            "content": "License and ownership",
+                            "wordcount": 45,
+                            "word_limit": 12,
+                            "$$hashKey": "object:964",
+                            "rendering": "The CampusLive project is registred as a non-profit venture part of the Student Venture program. Therefore, it abides to the regulations and the rules of this program while enjoying its right. Parts of those rights includes elligilibility for funding, full owned by the venture leader."
+                          },
+                          {
+                            "type": "item",
+                            "id": 1,
+                            "wordcount": 21,
+                            "$$hashKey": "object:965",
+                            "content": "Confidentiality",
+                            "word_limit": 12,
+                            "rendering": "Data used within the app are strickly confidential to its owner. Users are allowed to manage the confidentiality of their data."
+                          },
+                          {
+                            "type": "item",
+                            "$$hashKey": "object:1622",
+                            "wordcount": 0
+                          }
+                        ]
+                      ],
+                      "wordcount": 15,
+                      "word_limit": 37,
+                      "$$hashKey": "object:420",
+                      "rendering": "As part of the current status of the app, let's talk about regulation and ownership. "
+                    }
+                  ]
+                ],
+                "word_limit": 111,
+                "rendering": "The last step before going depeer into the features and the technicities, ;let's have a little bit of context on the current status of the app and its how well it is integrated inside the student body. ",
+                "$$hashKey": "object:185"
+              },
+              {
+                "type": "item",
+                "wordcount": 0,
+                "$$hashKey": "object:186"
+              }
+            ]
+          ],
+          "rendering": "Welcome to this documentation about the CampusLive app. Let's starts off with basic information before going deeper into concepts such as the features and the technical parts.",
+          "$$hashKey": "object:101"
+        },
+        {
+          "type": "container",
+          "wordcount": 28,
+          "content": "Features",
+          "word_limit": 333,
+          "columns": [
+            [{
+              "type": "container",
+              "id": "1",
+              "columns": [
+                [
+                  {
+                    "content": "Challenges",
+                    "type": "item",
+                    "wordcount": 41,
+                    "word_limit": 37,
+                    "$$hashKey": "object:460",
+                    "rendering": "The main challenges while developing the app was to learn every concept on the go. Starting from how to install Android Studio to how to implement voice recognition API, all the compenents of the app has been learnt while developing it."
+                  },
+                  {
+                    "content": "Progress by time",
+                    "type": "item",
+                    "wordcount": 58,
+                    "word_limit": 37,
+                    "$$hashKey": "object:461",
+                    "rendering": "In terms of pace of develpment, I would comment that it greatly depended on the needs on the concerned stakeholders such as the end users to the staff members. As we've seen previously, the app is built based on feedback and itteration. The first version of August 2016 is not anymore present in April 2017 because of feedback. "
+                  },
+                  {
+                    "type": "item",
+                    "wordcount": 40,
+                    "content": "Real need (Next to come)",
+                    "word_limit": 37,
+                    "$$hashKey": "object:462",
+                    "rendering": "And finally, the next step of the develpment would be to implement the database on top of the ALU database and have every staff stakeholder on board. That is the last step before the final release. That  concluded this documentation.  "
+                  },
+                  {
+                    "type": "container",
+                    "id": "1",
+                    "columns": [
+                      [
+                        {
+                          "content": "Challenges",
+                          "type": "item",
+                          "wordcount": 41,
+                          "word_limit": 37,
+                          "rendering": "The main challenges while developing the app was to learn every concept on the go. Starting from how to install Android Studio to how to implement voice recognition API, all the compenents of the app has been learnt while developing it.",
+                          "$$hashKey": "object:2208"
+                        },
+                        {
+                          "content": "Progress by time",
+                          "type": "item",
+                          "wordcount": 58,
+                          "word_limit": 37,
+                          "rendering": "In terms of pace of develpment, I would comment that it greatly depended on the needs on the concerned stakeholders such as the end users to the staff members. As we've seen previously, the app is built based on feedback and itteration. The first version of August 2016 is not anymore present in April 2017 because of feedback. ",
+                          "$$hashKey": "object:2209"
+                        },
+                        {
+                          "type": "item",
+                          "wordcount": 40,
+                          "content": "Real need (Next to come)",
+                          "word_limit": 37,
+                          "rendering": "And finally, the next step of the develpment would be to implement the database on top of the ALU database and have every staff stakeholder on board. That is the last step before the final release. That  concluded this documentation.  ",
+                          "$$hashKey": "object:2210"
+                        },
+                        {
+                          "type": "item",
+                          "wordcount": 0,
+                          "$$hashKey": "object:2211"
+                        }
+                      ],
+                      []
+                    ],
+                    "content": "Development Process ",
+                    "wordcount": 14,
+                    "word_limit": 111,
+                    "rendering": "Finally, let's discuss about the developement process including the challenges and the next steps.",
+                    "$$hashKey": "object:2177"
+                  },
+                  {
+                    "type": "item",
+                    "wordcount": 0,
+                    "$$hashKey": "object:463"
+                  }
+                ],
+                []
+              ],
+              "content": "Development Process ",
+              "wordcount": 14,
+              "word_limit": 111,
+              "$$hashKey": "object:201",
+              "rendering": "Finally, let's discuss about the developement process including the challenges and the next steps."
+            },
+              {
+                "type": "container",
+                "id": 1,
+                "wordcount": 7,
+                "content": "Operation team",
+                "word_limit": 111,
+                "columns": [
+                  [
+                    {
+                      "type": "item",
+                      "id": 1,
+                      "wordcount": 36,
+                      "content": "Transport Schedule",
+                      "word_limit": 37,
+                      "$$hashKey": "object:424",
+                      "rendering": "Firstly, the app allows the student to check the transport schedule from that has been previously communicated using a google spreadsheet. In addition, the student will be able to set reminder for any selected transport trip. "
+                    },
+                    {
+                      "type": "item",
+                      "wordcount": 34,
+                      "content": "Food menu and NFC meal card",
+                      "word_limit": 37,
+                      "$$hashKey": "object:425",
+                      "rendering": "Secondly, the app contains the weekly food menu issued by the catering team. In addition, the students will be able to send feedback from the app on a spefici food based on this menu.  "
+                    },
+                    {
+                      "type": "item",
+                      "wordcount": 43,
+                      "content": "Housing form",
+                      "word_limit": 37,
+                      "$$hashKey": "object:426",
+                      "rendering": "Thridly, the app contains the housing form. Known as Zendesk form, this form allows the students to submit housing related queries. In addition, the student will be able to track their past submited queries and the evolution of the process in real time. "
+                    },
+                    {
+                      "type": "item",
+                      "wordcount": 0,
+                      "$$hashKey": "object:427"
+                    }
+                  ]
+                ],
+                "$$hashKey": "object:191",
+                "rendering": "The first category is the Operation team."
+              },
+              {
+                "type": "container",
+                "wordcount": 19,
+                "content": "Student life and academic",
+                "word_limit": 111,
+                "columns": [
+                  [
+                    {
+                      "type": "container",
+                      "id": 1,
+                      "wordcount": 12,
+                      "content": "academic ",
+                      "word_limit": 56,
+                      "columns": [
+                        [
+                          {
+                            "type": "item",
+                            "wordcount": 20,
+                            "content": "Deadlines and events",
+                            "word_limit": 28,
+                            "$$hashKey": "object:1647",
+                            "rendering": "Hence, the apps is providing the students all the informations about there deadlines and academic related events such as examinations."
+                          },
+                          {
+                            "type": "item",
+                            "id": 1,
+                            "wordcount": 24,
+                            "content": "NFC attendance",
+                            "word_limit": 28,
+                            "$$hashKey": "object:969",
+                            "rendering": "In additions, the app is introducing the Near Field Communication Technology to let the students track the academic data such as attendance or Gradeds."
+                          },
+                          {
+                            "type": "item",
+                            "wordcount": 0,
+                            "$$hashKey": "object:971"
+                          }
+                        ]
+                      ],
+                      "$$hashKey": "object:432",
+                      "rendering": "Academic is at the core of the daily life of a student."
+                    },
+                    {
+                      "type": "container",
+                      "wordcount": 18,
+                      "content": "Student Life",
+                      "columns": [
+                        [
+                          {
+                            "type": "item",
+                            "wordcount": 31,
+                            "content": "Student life events",
+                            "word_limit": 19,
+                            "$$hashKey": "object:1685",
+                            "rendering": "We had introduced all the student life related events in the mobile app. The app would help the students to not miss an opportunities just because of poor means of communication."
+                          },
+                          {
+                            "type": "item",
+                            "id": 1,
+                            "wordcount": 28,
+                            "content": "Booking meeting",
+                            "$$hashKey": "object:1709",
+                            "word_limit": 19,
+                            "rendering": "In the same spirit, students finds the ability to book a meeting with a student life staff member difficult. The apps contains a feature that provide this functionality,"
+                          },
+                          {
+                            "type": "item",
+                            "wordcount": 28,
+                            "content": "Students interactivitity",
+                            "word_limit": 19,
+                            "$$hashKey": "object:975",
+                            "rendering": "Last but not least, the app is an interactive social network in which the students can be matched, call or invite each other to interact in real life."
+                          },
+                          {
+                            "type": "item",
+                            "$$hashKey": "object:1698",
+                            "wordcount": 0
+                          }
+                        ]
+                      ],
+                      "word_limit": 56,
+                      "$$hashKey": "object:433",
+                      "rendering": "Similarly, student life is  equally prominent aspect of an ALU student because it keeps the general wellness balanced. "
+                    },
+                    {
+                      "type": "item",
+                      "wordcount": 0,
+                      "$$hashKey": "object:434"
+                    }
+                  ]
+                ],
+                "$$hashKey": "object:192",
+                "rendering": "We've seen the added values from the Operation departement, let's move on to the Student life and academic departement."
+              },
+              {
+                "type": "container",
+                "wordcount": 19,
+                "content": "Others",
+                "word_limit": 111,
+                "columns": [
+                  [
+                    {
+                      "type": "item",
+                      "id": 1,
+                      "wordcount": 24,
+                      "content": "Mauritius ",
+                      "word_limit": 37,
+                      "$$hashKey": "object:438",
+                      "rendering": "One of them is the set of informative app about Mauritius. That includes but not limited to Taxi cab phone numbers, Pharmacies and doctors."
+                    },
+                    {
+                      "type": "item",
+                      "wordcount": 26,
+                      "content": "Student banking",
+                      "word_limit": 37,
+                      "$$hashKey": "object:439",
+                      "rendering": "Another additional feature would be a student mobile banking based on NFC cards. This would be a prominent feature later when the student ventures will develop."
+                    },
+                    {
+                      "type": "item",
+                      "wordcount": 31,
+                      "content": "Initiatiative space",
+                      "word_limit": 37,
+                      "$$hashKey": "object:440",
+                      "rendering": "Finally, there would be a space were current ALU initiatives, for profit or not will be hosted on the app in order foster their vision or market their goods and service."
+                    },
+                    {
+                      "type": "item",
+                      "wordcount": 0,
+                      "$$hashKey": "object:441"
+                    }
+                  ]
+                ],
+                "$$hashKey": "object:193",
+                "rendering": "In addition to the operation, student life and academic features, there are more features that the students might need."
+              },
+              {
+                "type": "item",
+                "wordcount": 0,
+                "$$hashKey": "object:194"
+              }
+            ]
+          ],
+          "$$hashKey": "object:102",
+          "rendering": "Now that we've tackled basics but important information, let's jump into each features of the app. The features consists of 3 mains categories representing a department at ALU. "
+        },
+
+        {
+          "type": "container",
+          "id": 1,
+          "columns": [
+            [
+              {
+                "content": "Technical sheet",
+                "type": "container",
+                "wordcount": 32,
+                "word_limit": 111,
+                "columns": [
+                  [
+                    {
+                      "type": "container",
+                      "wordcount": 8,
+                      "content": "Language and Framwork",
+                      "columns": [
+                        [
+                          {
+                            "type": "item",
+                            "id": 1,
+                            "wordcount": 26,
+                            "content": "Native JAva",
+                            "word_limit": 28,
+                            "$$hashKey": "object:2056",
+                            "rendering": "In that line, the language used is the native Android programming language which is Java. The whole app is written in Java and uses its libraries. "
+                          },
+                          {
+                            "type": "item",
+                            "wordcount": 30,
+                            "content": "Android Studio",
+                            "word_limit": 28,
+                            "$$hashKey": "object:2057",
+                            "rendering": "In terms of IDE, the app has been developped and compiled with Android Studio. This plateform offers a rich android support and facilitate access to dependencies such as the APIs."
+                          },
+                          {
+                            "type": "item",
+                            "wordcount": 0,
+                            "content": "",
+                            "$$hashKey": "object:2058"
+                          },
+                          {
+                            "type": "item",
+                            "wordcount": 0,
+                            "$$hashKey": "object:2059"
+                          }
+                        ]
+                      ],
+                      "word_limit": 56,
+                      "$$hashKey": "object:2034",
+                      "rendering": "Firstly, the mobile has developed for android devices."
+                    },
+                    {
+                      "type": "container",
+                      "id": 1,
+                      "wordcount": 26,
+                      "content": "Database: Google Spreadsheet",
+                      "columns": [
+                        [
+                          {
+                            "type": "item",
+                            "id": 1,
+                            "wordcount": 85,
+                            "content": "Why? (user friendly from input)",
+                            "word_limit": 19,
+                            "$$hashKey": "object:981",
+                            "rendering": "Why did I use a google spreadsheet instead of a specific database such as SQL? This question was crutial to me because I wanted establish a stable, perfomant and secure database to maintaining its to be user friendly for non technical user. This is very important because as I discussed prevously, the data that the app is going to use will be sourced by different department at ALU that might not have any technical skill. A google spreadsheet was the best candidate for those requirements. "
+                          },
+                          {
+                            "type": "item",
+                            "wordcount": 45,
+                            "content": "How it works (API and Js script)",
+                            "word_limit": 19,
+                            "$$hashKey": "object:982",
+                            "rendering": "So how does a google spreadsheet is used as a backend data of an application? I used a simple google API dependency from Google and download the desired spreadsheet in a XML format. Then, using Java, I parse those data and filter to irrelevant information. "
+                          },
+                          {
+                            "type": "item",
+                            "wordcount": 51,
+                            "content": "Disavantage",
+                            "word_limit": 19,
+                            "$$hashKey": "object:983",
+                            "rendering": "We've that the use of the google spreadhseet resulted from a crucial requirement, however, there has been some drawback while using a google spreadsheet. Data are not updated in real time and the performance is very low. Also, a slighly alteration of the spreadsheet format will make the app to crash."
+                          },
+                          {
+                            "type": "item",
+                            "wordcount": 0,
+                            "$$hashKey": "object:984"
+                          }
+                        ]
+                      ],
+                      "word_limit": 56,
+                      "$$hashKey": "object:446",
+                      "rendering": "The second and main component of the App is the database. The type of database used in the CampusLive is a simple fully functional google Spreadsheet."
+                    },
+                    {
+                      "type": "item",
+                      "wordcount": 0,
+                      "$$hashKey": "object:448"
+                    }
+                  ]
+                ],
+                "$$hashKey": "object:199",
+                "rendering": "To start off, let's outline the basic components used in the app such as the type of database or the framework because it will helps understand the complex architecture of the app.  "
+              },
+              {
+                "content": "App architercture",
+                "type": "container",
+                "wordcount": 33,
+                "word_limit": 111,
+                "columns": [
+                  [
+                    {
+                      "type": "container",
+                      "id": 1,
+                      "wordcount": 21,
+                      "content": "Download and upload",
+                      "columns": [
+                        [
+                          {
+                            "type": "item",
+                            "id": 1,
+                            "wordcount": 41,
+                            "content": "Transport shedule",
+                            "word_limit": 19,
+                            "$$hashKey": "object:997",
+                            "rendering": "When the user open the transport schedule feature, the program will call the google spreadsheet API to download a the transport schedule from Google drive. The xml data will then be parsed and the filtered before being displayed on the screen. "
+                          },
+                          {
+                            "type": "item",
+                            "wordcount": 57,
+                            "content": "Google CAlendar",
+                            "word_limit": 19,
+                            "$$hashKey": "object:998",
+                            "rendering": "Otherwise, any other features that require an information form the google calendar (such as the academic events or student life events) download the data is the same manner but directly from the google calendar. It means that the program is calling the google calendar API instead and there is no need to pass through the google spreadsheet."
+                          },
+                          {
+                            "type": "item",
+                            "id": 1,
+                            "wordcount": 55,
+                            "content": "Google form to google spreadsheet",
+                            "word_limit": 19,
+                            "rendering": "Certain features needs to send data back to the google spreadsheet, such as the maintenance form. We could have used the google spreadhseet API upload function be a simplier trick would be to created a google form to which data are linked up toward our google spreadsheet database. This is simpler and insure format consistency.  ",
+                            "$$hashKey": "object:2164"
+                          },
+                          {
+                            "type": "item",
+                            "wordcount": 0,
+                            "$$hashKey": "object:999"
+                          }
+                        ]
+                      ],
+                      "word_limit": 56,
+                      "$$hashKey": "object:452",
+                      "rendering": "To begin with, let's understand what happens when the user want to display a data, such as the a transport trip."
+                    },
+                    {
+                      "type": "container",
+                      "wordcount": 25,
+                      "content": "user account",
+                      "columns": [
+                        [
+                          {
+                            "type": "item",
+                            "id": 1,
+                            "wordcount": 54,
+                            "content": "Login",
+                            "word_limit": 28,
+                            "$$hashKey": "object:2118",
+                            "rendering": "Inside the google spreadsheet, there is a table containing the list of all ALU student email address. Therefore, when a user login for the first time, the program will download this table using the method we've seen earlier and then it will store the account details of the user into the phone local database."
+                          },
+                          {
+                            "type": "item",
+                            "wordcount": 41,
+                            "content": "Info",
+                            "word_limit": 28,
+                            "$$hashKey": "object:2119",
+                            "rendering": "So when the user do a certain activity such as sending a feedback about the food, the program will read the email address stored inside the phone local database. The same principle is used for features like NFC attendance, meeting booking... "
+                          },
+                          {
+                            "type": "item",
+                            "wordcount": 0,
+                            "content": "",
+                            "word_limit": 19,
+                            "$$hashKey": "object:2120",
+                            "rendering": ""
+                          },
+                          {
+                            "type": "item",
+                            "wordcount": 0,
+                            "$$hashKey": "object:2121"
+                          }
+                        ]
+                      ],
+                      "word_limit": 56,
+                      "$$hashKey": "object:2096",
+                      "rendering": "Still under the explanation of the app architercture, it's important to note that the user will be required to log in with the ALU account."
+                    },
+                    {
+                      "type": "item",
+                      "wordcount": 0,
+                      "$$hashKey": "object:455"
+                    }
+                  ]
+                ],
+                "$$hashKey": "object:200",
+                "rendering": "Now that we've tackle the main components, let's conceptualize the architecture of the whole apps. We can use few example to demonstrate the general concept since most the feature uses the same algorythm. "
+              }
+            ]
+          ],
+          "content": "Technical Part",
+          "wordcount": 28,
+          "word_limit": 333,
+          "$$hashKey": "object:103",
+          "rendering": "That's all about the high level information about the CampusLive app. We've seen the purpose and the features of the app. Now let's talk about its technical functionality."
+        },
+        {
+          "type": "item",
+          "wordcount": 0,
+          "$$hashKey": "object:104"
+        }
+      ],
+      "Off Topic Box": [
+        {
+          "type": "item",
+          "id": 16,
+          "content": "",
+          "wordcount": 0,
+          "$$hashKey": "object:109"
+        },
+        {
+          "type": "item",
+          "wordcount": 0,
+          "$$hashKey": "object:110"
+        }
+      ],
+      "Buckets": [
+        {
+          "type": "item",
+          "wordcount": 0,
+          "$$hashKey": "object:113"
+        }
+      ]
+    }
+  },
+  "keywords": [
+    {
+      "label": "write",
+      "$$hashKey": "object:79"
+    },
+    {
+      "label": "a",
+      "$$hashKey": "object:80"
+    },
+    {
+      "label": "documentation",
+      "definition": "The written specification and instructions accompanying a product, especially a computer program or hardware.",
+      "$$hashKey": "object:81"
+    },
+    {
+      "label": "about",
+      "definition": "On the subject of; concerning.",
+      "$$hashKey": "object:82"
+    },
+    {
+      "label": "the",
+      "$$hashKey": "object:83"
+    },
+    {
+      "label": "campus",
+      "$$hashKey": "object:84"
+    },
+    {
+      "label": "live",
+      "$$hashKey": "object:85"
+    },
+    {
+      "label": "app",
+      "$$hashKey": "object:86"
+    }
+  ],
+  "introduction": {
+    "wordcount": 0,
+    "rendering": ""
+  },
+  "conclusion": {
+    "wordcount": 0
+  },
+  "stopwatches": [
+    {
+      "log": [
+        65170,
+        7839,
+        3724644,
+        2691054
+      ],
+      "elapsedTime": "1970-01-01T03:44:13.559Z",
+      "interval": 100,
+      "$$hashKey": "object:68"
+    }
+  ],
+  "brainstorm": [
+    {
+      "content": "Campus Live purpose",
+      "type": "item"
+    },
+    {
+      "type": "item"
+    }
+  ],
+  "title": "campus live documentation",
+  "thesis": "write a documentation about the campus live app",
+  "theme": "Mobile app development",
+  "word_limit": 1000
+}
