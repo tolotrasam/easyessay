@@ -1,4 +1,7 @@
 <!--<meta http-equiv="refresh" content="0; url=app" />-->
+<?php
+session_start();
+?>
 <html>
 <head>
     <title>Tolotra | Welcome to your new app!</title>
@@ -109,7 +112,7 @@
 	     * Date: 11/04/2017
 	     * Time: 20:56
 	     */
-	    session_start();
+
 	    require 'app/config.php';
 
 	    $sql = "SELECT essay_id, essay_title FROM essay";
