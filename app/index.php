@@ -1,3 +1,10 @@
+<html>
+<head>
+
+	<title>Tolotra | Welcome to EasyEssay!</title>
+</head>
+<body>
+
 <?php
 /**
  * Created by PhpStorm.
@@ -24,4 +31,6 @@ while ( $row = mysqli_fetch_array( $result ) ) {
 echo '</ul>';
 
 ?>
+</body>
 
+</html>
