@@ -1,5 +1,6 @@
+
 <?php
-require 'session.php';
+session_start();
 ?>
 <!--<meta http-equiv="refresh" content="0; url=app" />-->
 <html>
