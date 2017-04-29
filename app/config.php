@@ -69,10 +69,10 @@ if (mysqli_connect_errno())
 // >>>>>>> origin/master
 
 // Create connection we use $conn instead of $link
-$conn = new mysqli($servername, $username, $password, $database);
-// Check connection
-if (mysqli_connect_errno())
-  {
-  echo "Failed to connect to MySQL: " . mysqli_connect_error($conn);
-  }
+//$conn = new mysqli($servername, $username, $password, $database);
+//// Check connection
+//if (mysqli_connect_errno())
+//  {
+//  echo "Failed to connect to MySQL: " . mysqli_connect_error($conn);
+//  }
   ?>
