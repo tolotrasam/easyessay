@@ -125,7 +125,7 @@ require 'session.php';
 
 		    $id    = $row['essay_id'];
 		    $title = $row['essay_title'];
-		    echo '<li><a href = "essay.php?essay_id=' . $id . '">' . $title . '</a></li>';
+		    echo '<li><a href = "app/essay.php?essay_id=' . $id . '">' . $title . '</a></li>';
 
 	    }
 
