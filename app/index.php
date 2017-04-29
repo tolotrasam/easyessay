@@ -1,5 +1,8 @@
 <?php
-session_start(); //provide ssl certificate, must be before any text sent
+if(!isset($_SESSION['hasSession'])) {
+	session_start();
+	$_SESSION['hasSession'] = true;
+}
 ?>
 <html>
 <head>
