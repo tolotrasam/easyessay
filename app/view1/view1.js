@@ -372,7 +372,7 @@ angular.module('myApp.view1', ['ngRoute', 'ngSanitize', 'dndLists'])
                 var next_id = $scope.framework.element_id[next];
                 var scroll_to_target = $('#' + next_id);
                 $('html, body').animate({
-                    scrollTop: scroll_to_target.offset().top - 44,
+                    scrollTop: scroll_to_target.offset().top - 64,
                     scrollLeft: scroll_to_target.offset().left - scroll_to_target.width() / 2
                 }, 500);
 
