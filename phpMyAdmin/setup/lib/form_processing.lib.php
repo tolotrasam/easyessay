@@ -77,7 +77,7 @@ function PMA_generateHeader303()
 
     // drop post data
     $response->header('HTTP/1.1 303 See Other');
-    $response->header('Location: index.html' . URL::getCommonRaw());
+    $response->header('Location: index.php' . URL::getCommonRaw());
 
     if (!defined('TESTSUITE')) {
         exit;

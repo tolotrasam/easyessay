@@ -426,7 +426,7 @@ class Util
         if (defined('TESTSUITE')) {
             /* Provide consistent URL for testsuite */
             return PMA_linkURL('https://docs.phpmyadmin.net/en/latest/' . $url);
-        } elseif (@file_exists('doc/html/index.html')) {
+        } elseif (@file_exists('doc/html/index.php')) {
             if (defined('PMA_SETUP')) {
                 return '../doc/html/' . $url;
             } else {
@@ -3220,7 +3220,7 @@ class Util
             // Values for $cfg['DefaultTabServer']
             switch ($target) {
             case 'welcome':
-                return 'index.html';
+                return 'index.php';
             case 'databases':
                 return 'server_databases.php';
             case 'status':

@@ -29,7 +29,7 @@ $GLOBALS['url_query'] = URL::getCommon(array('db' => $db));
 /**
  * Defines the urls to return to in case of error in a sql statement
  */
-$err_url = 'index.html' . $GLOBALS['url_query'];
+$err_url = 'index.php' . $GLOBALS['url_query'];
 
 /**
  * @global boolean Checks for superuser privileges

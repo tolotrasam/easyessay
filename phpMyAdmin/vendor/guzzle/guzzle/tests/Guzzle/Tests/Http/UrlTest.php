@@ -33,8 +33,8 @@ class UrlTest extends \Guzzle\Tests\GuzzleTestCase
 
     public function testValidatesUrlPartsInFactory()
     {
-        $url = Url::factory('/index.html');
-        $this->assertEquals('/index.html', (string) $url);
+        $url = Url::factory('/index.php');
+        $this->assertEquals('/index.php', (string) $url);
         $this->assertFalse($url->isAbsolute());
 
         $url = 'http://michael:test@test.com:80/path/123?q=abc#test';

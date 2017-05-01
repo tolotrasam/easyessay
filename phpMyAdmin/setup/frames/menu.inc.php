@@ -14,7 +14,7 @@ if (!defined('PHPMYADMIN')) {
 $formset_id = isset($_GET['formset']) ? $_GET['formset'] : null;
 
 echo '<ul>';
-echo '<li><a href="index.html' , URL::getCommon() , '"'
+echo '<li><a href="index.php' , URL::getCommon() , '"'
     , ($formset_id === null ? ' class="active' : '')
     , '">' , __('Overview') , '</a></li>';
 
@@ -28,7 +28,7 @@ $formsets = array(
 );
 
 foreach ($formsets as $formset => $label) {
-    echo '<li><a href="index.html' , URL::getCommon(array('page' => 'form', 'formset' => $formset)) , '" '
+    echo '<li><a href="index.php' , URL::getCommon(array('page' => 'form', 'formset' => $formset)) , '" '
         , ($formset_id === $formset ? ' class="active' : '')
         , '">' , $label , '</a></li>';
 }

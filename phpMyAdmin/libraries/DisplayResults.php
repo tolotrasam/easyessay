@@ -3564,7 +3564,7 @@ class DisplayResults
                     'db'        => $this->__get('db'),
                     'table'     => $this->__get('table'),
                     'sql_query' => $url_sql_query,
-                    'goto'      => 'index.html',
+                    'goto'      => 'index.php',
                 );
 
             $lnk_goto = 'sql.php' . URL::getCommonRaw($_url_params);

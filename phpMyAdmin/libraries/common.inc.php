@@ -286,7 +286,7 @@ $goto_whitelist = array(
     'db_routines.php',
     'export.php',
     'import.php',
-    'index.html',
+    'index.php',
     'pdf_pages.php',
     'pdf_schema.php',
     'server_binlog.php',

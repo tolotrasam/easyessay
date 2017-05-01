@@ -906,7 +906,7 @@ $cfg['NavigationDisplayLogo'] = true;
  *
  * @global string $cfg['NavigationLogoLink']
  */
-$cfg['NavigationLogoLink'] = 'index.html';
+$cfg['NavigationLogoLink'] = 'index.php';
 
 /**
  * whether to open the linked page in the main window ('main') or

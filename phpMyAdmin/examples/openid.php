@@ -158,7 +158,7 @@ if (isset($_POST['start'])) {
         $_SESSION['PMA_single_signon_password'] = $AUTH_MAP[$id]['password'];
         session_write_close();
         /* Redirect to phpMyAdmin (should use absolute URL here!) */
-        header('Location: ../index.html');
+        header('Location: ../index.php');
     } else {
         Show_page('<p>User not allowed!</p>');
         exit;

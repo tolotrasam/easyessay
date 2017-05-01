@@ -441,7 +441,7 @@ class Theme
     public function getPrintPreview()
     {
         $url_params = array('set_theme' => $this->getId());
-        $url = 'index.html' . URL::getCommon($url_params);
+        $url = 'index.php' . URL::getCommon($url_params);
 
         $retval  = '<div class="theme_preview">';
         $retval .= '<h2>';

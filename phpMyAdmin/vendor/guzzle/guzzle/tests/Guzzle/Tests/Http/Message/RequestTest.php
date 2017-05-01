@@ -234,10 +234,10 @@ class RequestTest extends \Guzzle\Tests\GuzzleTestCase
     public function testRequestHasPath()
     {
         $this->assertEquals('/', $this->request->getPath());
-        $this->assertEquals($this->request, $this->request->setPath('/index.html'));
-        $this->assertEquals('/index.html', $this->request->getPath());
-        $this->assertEquals($this->request, $this->request->setPath('index.html'));
-        $this->assertEquals('/index.html', $this->request->getPath());
+        $this->assertEquals($this->request, $this->request->setPath('/index.php'));
+        $this->assertEquals('/index.php', $this->request->getPath());
+        $this->assertEquals($this->request, $this->request->setPath('index.php'));
+        $this->assertEquals('/index.php', $this->request->getPath());
     }
 
     public function testPermitsFalsyComponents()
@@ -303,10 +303,10 @@ class RequestTest extends \Guzzle\Tests\GuzzleTestCase
     public function testGetResourceUri()
     {
         $this->assertEquals('/', $this->request->getResource());
-        $this->request->setPath('/index.html');
-        $this->assertEquals('/index.html', $this->request->getResource());
+        $this->request->setPath('/index.php');
+        $this->assertEquals('/index.php', $this->request->getResource());
         $this->request->getQuery()->add('v', '1');
-        $this->assertEquals('/index.html?v=1', $this->request->getResource());
+        $this->assertEquals('/index.php?v=1', $this->request->getResource());
     }
 
     public function testRequestHasMutableUrl()
@@ -462,7 +462,7 @@ class RequestTest extends \Guzzle\Tests\GuzzleTestCase
         $this->assertNotSame($response, $response2);
 
         try {
-            $request = RequestFactory::getInstance()->create('GET', $this->getServer()->getUrl() . 'index.html');
+            $request = RequestFactory::getInstance()->create('GET', $this->getServer()->getUrl() . 'index.php');
             $request->setClient($this->client);
             $response = $request->send();
             $this->fail('Request did not receive a 404 response');
@@ -481,7 +481,7 @@ class RequestTest extends \Guzzle\Tests\GuzzleTestCase
 
         $this->assertEquals('/', $requests[0]->getPath());
         $this->assertEquals('/', $requests[1]->getPath());
-        $this->assertEquals('/index.html', $requests[2]->getPath());
+        $this->assertEquals('/index.php', $requests[2]->getPath());
 
         $parts = explode("\r\n", $messages[0]);
         $this->assertEquals('GET / HTTP/1.1', $parts[0]);
@@ -490,7 +490,7 @@ class RequestTest extends \Guzzle\Tests\GuzzleTestCase
         $this->assertEquals('GET / HTTP/1.1', $parts[0]);
 
         $parts = explode("\r\n", $messages[2]);
-        $this->assertEquals('GET /index.html HTTP/1.1', $parts[0]);
+        $this->assertEquals('GET /index.php HTTP/1.1', $parts[0]);
     }
 
     public function testThrowsExceptionsWhenUnsuccessfulResponseIsReceivedByDefault()
@@ -499,7 +499,7 @@ class RequestTest extends \Guzzle\Tests\GuzzleTestCase
         $this->getServer()->enqueue("HTTP/1.1 404 Not found\r\nContent-Length: 0\r\n\r\n");
 
         try {
-            $request = $this->client->get('/index.html');
+            $request = $this->client->get('/index.php');
             $response = $request->send();
             $this->fail('Request did not receive a 404 response');
         } catch (BadResponseException $e) {

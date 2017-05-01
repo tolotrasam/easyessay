@@ -516,7 +516,7 @@ class AuthenticationCookie extends AuthenticationPlugin
         // force reload to ensure the client accepts cookies
         if (! $GLOBALS['from_cookie']) {
             // URL where to go:
-            $redirect_url = './index.html';
+            $redirect_url = './index.php';
 
             // any parameters to pass?
             $url_params = array();
@@ -528,7 +528,7 @@ class AuthenticationCookie extends AuthenticationPlugin
             }
             // any target to pass?
             if (! empty($GLOBALS['target'])
-                && $GLOBALS['target'] != 'index.html'
+                && $GLOBALS['target'] != 'index.php'
             ) {
                 $url_params['target'] = $GLOBALS['target'];
             }

@@ -43,7 +43,7 @@ if (empty($is_db)) {
                     $url_params['show_as_php'] = $show_as_php;
                 }
                 PMA_sendHeaderLocation(
-                    './index.html'
+                    './index.php'
                     . URL::getCommonRaw($url_params)
                 );
             }

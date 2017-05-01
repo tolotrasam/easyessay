@@ -892,7 +892,7 @@ class Config
      */
     public function loadUserPreferences()
     {
-        // index.html should load these settings, so that phpmyadmin.css.php
+        // index.php should load these settings, so that phpmyadmin.css.php
         // will have everything available in session cache
         $server = isset($GLOBALS['server'])
             ? $GLOBALS['server']
@@ -945,7 +945,7 @@ class Config
         }
 
         // settings below start really working on next page load, but
-        // changes are made only in index.html so everything is set when
+        // changes are made only in index.php so everything is set when
         // in frames
 
         // save theme
