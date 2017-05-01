@@ -1579,7 +1579,7 @@ class Config
     public static function getFontsizeForm()
     {
         return '<form name="form_fontsize_selection" id="form_fontsize_selection"'
-            . ' method="get" action="index.html" class="disableAjax">' . "\n"
+            . ' method="get" action="index.php" class="disableAjax">' . "\n"
             . URL::getHiddenInputs() . "\n"
             . Config::getFontsizeSelection() . "\n"
             . '</form>';

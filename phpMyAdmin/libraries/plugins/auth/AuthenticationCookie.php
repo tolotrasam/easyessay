@@ -164,7 +164,7 @@ class AuthenticationCookie extends AuthenticationPlugin
         echo '
     <br />
     <!-- Login form -->
-    <form method="post" action="index.html" name="login_form"' , $autocomplete ,
+    <form method="post" action="index.php" name="login_form"' , $autocomplete ,
             ' class="disableAjax login hide js-show">
         <fieldset>
         <legend>';
