@@ -1,6 +1,6 @@
 <?php
 //session_start();
-require(__DIR__.'/../session.php');
+require( __DIR__ . '/../session.php' );
 ?>
 <html>
 <head>
@@ -105,7 +105,7 @@ require(__DIR__.'/../session.php');
         <div class="article">
             <p>Refer to the <a href="app/essay.php?essay_id=809358">tutorial</a> if you need help using this app.</p>
 
-            <?php
+			<?php
 			/**
 			 * Created by PhpStorm.
 			 * User: Tolotra Samuel
@@ -124,6 +124,9 @@ require(__DIR__.'/../session.php');
 
 				$id    = $row['essay_id'];
 				$title = $row['essay_title'];
+				if ( !( $title ) ) {
+					$title = 'untitled ' . $id;
+				};
 				echo '<li><a href = "essay.php?essay_id=' . $id . '">' . $title . '</a></li>';
 
 			}
